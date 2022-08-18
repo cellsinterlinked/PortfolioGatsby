@@ -35,8 +35,8 @@ const FeatBubbleStyles = styled.div`
   transition: 1s ease;
   transition-delay: 100;
   @media (max-width: 700px) {
-    width: 95vw;
-    height: 95vw;
+    width: 90vw;
+    height: 90vw;
   }
 `;
 

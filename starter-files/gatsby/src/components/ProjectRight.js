@@ -32,6 +32,13 @@ const RoundButtonStyles = styled.div`
   text-align: center;
   box-shadow: 3px -2px 6px rgba(0, 0, 0, 0.472);
   transition: 500ms ease;
+  @media (max-width: 700px) {
+    left: 1rem;
+    height: 7rem;
+    width: 7rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 `;
 
 const DescriptionStyles = styled.div`
@@ -53,8 +60,8 @@ const DescriptionStyles = styled.div`
   transition: 1s ease;
   transition-delay: 100;
   @media (max-width: 700px) {
-    width: 95vw;
-    height: 95vw;
+    width: 90vw;
+    height: 90vw;
   }
 `;
 
@@ -82,7 +89,9 @@ const CodeStyles = styled.div`
   @media (max-width: 700px) {
     right: 1rem;
     left: auto;
-    top: -10rem;
+    top: -7rem;
+    height: 10rem;
+    width: 10rem;
   }
 
   cursor: pointer;
@@ -118,7 +127,11 @@ const CodeStyles = styled.div`
 
 const LiveStyles = styled.div`
 @media (max-width: 700px) {
- left: 1rem
+ left: 1rem;
+ height: 10rem;
+ width: 10rem;
+ bottom: -7rem;
+
 }
   cursor: pointer;
   display: flex;

@@ -17,6 +17,13 @@ const HomeStyles = styled.section`
   scroll-snap-type: y mandatory;
 `;
 
+const PROJECTIMAGES = [
+  'https://res.cloudinary.com/dbnapmpvm/image/upload/v1644352375/Portfolio/AFEB3746-1A8E-4A7D-A411-2D5A8364F353_w33kli.jpg',
+  'https://res.cloudinary.com/dbnapmpvm/image/upload/v1644349964/Portfolio/BBF1A966-F0A9-41FF-9122-29B43C58841B_1_105_c_sdq7ou.jpg',
+  'https://res.cloudinary.com/dbnapmpvm/image/upload/v1658358079/Portfolio/Screen_Shot_2022-02-08_at_1.11.10_PM_nzcxfs.png',
+  'https://res.cloudinary.com/dbnapmpvm/image/upload/v1658358075/Portfolio/Image_7-20-22_at_6.47_PM_wyf7s3.jpg',
+];
+
 export default function HomePage({ data, ...props }) {
   console.log(data);
   return (
@@ -26,6 +33,7 @@ export default function HomePage({ data, ...props }) {
       <ProjectIntro projects={data.projects.nodes.reverse()} />
       {data.projects.nodes.reverse().map((project, index) => (
         <Project
+          image={PROJECTIMAGES[index]}
           title={project.name.toUpperCase()}
           key={project.name}
           description={project.description}

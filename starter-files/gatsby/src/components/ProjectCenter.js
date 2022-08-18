@@ -20,8 +20,8 @@ const SectionStyles = styled.div`
 const TitleStyles = styled.h1`
   font-size: 2.5rem;
   letter-spacing: 1px;
-  color: grey;
-  font-weight: bold;
+  color: black;
+  font-weight: bolder;
 `;
 
 const VideoContainerStyles = styled.div`
@@ -35,6 +35,13 @@ const VideoContainerStyles = styled.div`
   left: auto;
   right: auto;
   z-index: 1;
+  @media (max-width: 1200px) {
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 `;
 
 const PlayContainerStyles = styled.div`
@@ -68,8 +75,8 @@ const ButtonContainerStyles = styled.div`
   height: 15rem;
   background: linear-gradient(
     30deg,
-    rgba(117, 41, 73, 0.014) 2%,
-    rgba(170, 46, 98, 0.5) 100%
+    rgba(117, 41, 73, 0.34) 2%,
+    rgba(170, 46, 98, 1) 100%
   );
   z-index: -1;
 `;
@@ -77,9 +84,35 @@ const ButtonContainerStyles = styled.div`
 const VideoStyles = styled.video`
   height: 80vh;
   margin: auto;
+  @media (max-width: 1200px) {
+    width: 100vw;
+    height: auto;
+  }
 `;
 
-export default function ProjectCenter({ video, title, scroll }) {
+const BackgroundStyles = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 80vh;
+  z-index: -2;
+  overflow: hidden;
+  img {
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 10%;
+    max-width: 160%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+`;
+
+export default function ProjectCenter({ video, title, scroll, image }) {
   const [playing, setPlaying] = useState(false);
 
   const playFunc = () => {
@@ -116,6 +149,11 @@ export default function ProjectCenter({ video, title, scroll }) {
 
         <TitleStyles>{title}</TitleStyles>
       </PlayContainerStyles>
+      {!playing && (
+        <BackgroundStyles>
+          <img src={image} alt="" />
+        </BackgroundStyles>
+      )}
       <RightArrow title="DESCRIPTION" scroll={scroll} />
     </SectionStyles>
   );

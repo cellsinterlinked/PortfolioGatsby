@@ -135,7 +135,7 @@ const IconStyles = styled.img`
 
 const ObserverStyles = styled.div`
   height: 12rem;
-  width: 14rem;
+  width: 12rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -185,6 +185,9 @@ color: grey;
 font-size: 25px;
 font-weight: bold;
 margin-bottom: 20px;
+@media(max-width: 900px) {
+  margin-bottom: 50px;
+}
 }
 `;
 

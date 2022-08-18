@@ -25,11 +25,6 @@ const ContactBoxStyles = styled.section`
   width: 60rem;
   height: 50rem;
   box-shadow: 5px -3px 12px rgba(0, 0, 0, 0.272);
-  // background: linear-gradient(
-  //   30deg,
-  //   rgba(255, 255, 255, 0.118) 2%,
-  //   rgba(225, 225, 225, 0.831) 100%
-  // );
   backdrop-filter: blur(5px);
   margin: auto;
 
@@ -48,6 +43,11 @@ const ContactBoxStyles = styled.section`
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  @media (max-width: 700px) {
+    width: calc(95vw - 4rem);
+    height: 40rem;
+    padding: 2rem;
+  }
 `;
 const SmInputStyles = styled.input`
   width: 35rem;
@@ -61,6 +61,9 @@ const SmInputStyles = styled.input`
   outline: none;
   border: none;
   font-weight:bold;
+  @media(max-width: 700px) {
+    width: 90%;
+  }
 
   box-shadow: none;
   &::-webkit-input-placeholder {
@@ -80,6 +83,7 @@ const FormStyles = styled.form`
 `;
 
 const MessageStyles = styled.textarea`
+
   width: 35rem;
   background-color:  rgba(176, 176, 176, 0.204);
   font-size: 14px;
@@ -91,6 +95,9 @@ const MessageStyles = styled.textarea`
   height: 10rem;
   border: none;
   max-width: 40rem;
+  @media(max-width: 700px) {
+    width: calc(34rem - 14px);
+  }
   &::-webkit-input-placeholder {
     font-size: 14px;
     color: black;

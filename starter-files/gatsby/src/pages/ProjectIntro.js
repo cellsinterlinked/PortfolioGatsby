@@ -142,14 +142,14 @@ const PrevContainerStyles = styled.div`
     overflow: hidden;
 
     @media (max-width: 700px) {
-      width: 15rem;
+      width: 11rem;
       height: auto;
       &:nth-child(1) {
         transform: rotate(-5deg);
         margin-right: 3rem;
         transition-delay: 150ms;
         margin-bottom: 12rem;
-        mex-height: 15rem;
+        max-height: 30rem;
       }
       &:nth-child(2) {
         transform: rotate(5deg);
@@ -162,7 +162,7 @@ const PrevContainerStyles = styled.div`
         transition-delay: 450ms;
         margin-right: 2rem;
         margin-bottom: 8rem;
-        width: 18rem;
+        width: 11rem;
         height: 10rem
       }
       &:nth-child(4) {
@@ -170,8 +170,8 @@ const PrevContainerStyles = styled.div`
         margin-left: 2rem;
         transition-delay: 600ms;
         margin-bottom: 8rem;
-        width: 18rem;
-        height: 10rem;
+        width: 11rem;
+        max-height: 30rem;
     }
 
   }

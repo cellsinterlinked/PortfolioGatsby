@@ -145,7 +145,13 @@ export default function Technology({ title, scroll }) {
     <RightContainerStyle
       ref={ref}
       className={inView ? 'seeRightArrow' : 'hideRightArrow'}
-      onClick={() => scroll(2000)}
+      onClick={() => {
+        if (window.innerWidth > 1345) {
+          scroll(2000);
+        } else {
+          scroll(500);
+        }
+      }}
     >
       <LinkStyle>
         <ArrowStyle>

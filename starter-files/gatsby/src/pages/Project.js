@@ -32,11 +32,16 @@ export default function Project({
   codeLink,
   technologies,
   features,
+  image,
 }) {
   const ref = useRef();
 
   useEffect(() => {
-    ref.current.scrollLeft += 2000;
+    if (window.innerWidth > 1345) {
+      ref.current.scrollLeft += 2000;
+    } else {
+      ref.current.scrollLeft += 500;
+    }
   }, []);
 
   const scroll = (scrollOffset) => {
@@ -51,7 +56,12 @@ export default function Project({
         technologies={technologies}
         scroll={scroll}
       />
-      <ProjectCenter video={video} title={title} scroll={scroll} />
+      <ProjectCenter
+        video={video}
+        title={title}
+        scroll={scroll}
+        image={image}
+      />
       <ProjectRight
         description={description}
         codeLink={codeLink}
