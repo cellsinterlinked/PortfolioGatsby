@@ -73,7 +73,7 @@ export default function DesktopDisp({ projects }) {
   const { ref, inView } = useInView({
     threshold: 1,
   });
-  return (
+  return projects ? (
     <PrevContainerStyles>
       <span
         ref={ref}
@@ -100,5 +100,5 @@ export default function DesktopDisp({ projects }) {
         <Img fluid={projects[3].leftimage.asset.fluid} alt={projects[3].name} />
       </span>
     </PrevContainerStyles>
-  );
+  ) : null;
 }

@@ -79,7 +79,8 @@ export default function MobileDisp({ projects }) {
   const { ref, inView } = useInView({
     threshold: 1,
   });
-  return (
+
+  return projects ? (
     <MobileContainerStyles>
       <span
         ref={ref}
@@ -106,5 +107,5 @@ export default function MobileDisp({ projects }) {
         <Img fluid={projects[0].leftimage.asset.fluid} alt={projects[0].name} />
       </span>
     </MobileContainerStyles>
-  );
+  ) : null;
 }

@@ -158,7 +158,6 @@ export default function Head() {
   const say = () => {
     console.log('scrolling');
   };
-  console.log(window);
 
   useEffect(() => {
     document.body.addEventListener('scroll', say);

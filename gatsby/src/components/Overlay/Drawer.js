@@ -24,6 +24,8 @@ const SideDrawerStyles = styled.aside`
   }
 `;
 
+const isBrowser = typeof window !== 'undefined';
+
 export default function SideDrawer(props) {
   const content = (
     <CSSTransition
@@ -36,9 +38,11 @@ export default function SideDrawer(props) {
       <SideDrawerStyles>{props.children}</SideDrawerStyles>
     </CSSTransition>
   );
-  // if (typeof window === 'undefined' || !window.document) {
-  //   return;
-  // }
-
-  return ReactDOM.createPortal(content, document.getElementById('drawer-hook'));
+  if (isBrowser) {
+    return ReactDOM.createPortal(
+      content,
+      document.getElementById('drawer-hook')
+    );
+  }
+  return null;
 }

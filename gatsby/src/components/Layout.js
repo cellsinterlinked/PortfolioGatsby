@@ -28,7 +28,7 @@ export default function Layout({ children }) {
     <LayoutStyles>
       <GlobalStyles />
       <Typography />
-      {/* <Nav /> */}
+      <Nav />
       {children}
       {/* <Footer /> */}
     </LayoutStyles>
