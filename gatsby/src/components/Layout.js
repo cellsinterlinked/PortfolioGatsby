@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Nav from './Nav';
-import Footer from './Footer';
+
 import GlobalStyles from '../styles/GlobalStyles';
 import Typography from '../styles/Typography.js';
 
@@ -15,10 +15,7 @@ const LayoutStyles = styled.section`
 `;
 
 export default function Layout({ children }) {
-  const say = () => {
-    console.log('scrolling');
-  };
-  console.log(window);
+  const say = () => {};
 
   useEffect(() => {
     window.addEventListener('scroll', say);
