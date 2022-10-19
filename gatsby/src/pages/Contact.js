@@ -181,7 +181,7 @@ export default function Contact(props) {
       <Squares4 />
       <ContactBoxStyles>
         <h1>CONTACT ME</h1>
-        <p>Feel free to send me a message blablabla buzzwords</p>
+        <p>Feel free to send me a message!</p>
         <FormStyles id="myForm" onSubmit={sendMessage}>
           <SmInputStyles
             type="text"

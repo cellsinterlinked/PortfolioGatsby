@@ -121,8 +121,10 @@ export default function Project({
   const [display, setDisplay] = useState('center');
   const backArr = [<Squares1 />, <Squares2 />, <Squares3 />, <Squares4 />];
   const urlArr = [
-    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1662655395/Portfolio/Non-Urgent_dmd8gd.mp4',
-    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1662687590/Portfolio/ACM_Realty2_u4ba9p.mp4',
+    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199004/Portfolio/ACM_vnpou9.mp4',
+    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199035/Portfolio/Coach_Console_tyokfh.mp4',
+    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199047/Portfolio/Tabletop_Assistant_awdaqe.mp4',
+    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199016/Portfolio/Non-Urgent_r7ueev.mp4',
   ];
 
   return (
@@ -166,7 +168,7 @@ export default function Project({
       )}
       {display === 'center' && (
         <ProjectCenter
-          video={urlArr[0]}
+          video={urlArr[index]}
           title={title}
           // scroll={scroll}
           image={image}

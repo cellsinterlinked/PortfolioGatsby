@@ -17,6 +17,9 @@ const HomeStyles = styled.section`
   perspective: 10px;
   // scroll-snap-type: y mandatory;
   // scroll-behavior: smooth;
+  // @media (max-width: 700px) {
+  //   scroll-snap-type: y mandatory;
+  // }
 `;
 
 const PROJECTIMAGES = [
