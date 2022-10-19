@@ -179,13 +179,8 @@ export default function ProjectCenter({
       {/* <LeftArrow title="FEATURES" scroll={scroll} /> */}
       {playing && (
         <VideoContainerStyles>
-          <VideoStyles
-            controls="controls"
-            preload="none"
-            autoPlay
-            onClick="this.play()"
-          >
-            <source type="video/webm" src={video} />
+          <VideoStyles controls="controls" preload="none" onClick="this.play()">
+            <source type="video/mp4" src={video} />
           </VideoStyles>
         </VideoContainerStyles>
       )}
