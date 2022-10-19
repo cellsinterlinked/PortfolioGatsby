@@ -17,8 +17,8 @@ const SideDrawerStyles = styled.aside`
   display: flex;
   padding-top: 3rem;
   border-left: 1px solid rgba(73, 73, 73, 0.548);
-  border-bottom: 1px solid rgba(73, 73, 73, 0.548);
-  border-top: 1px solid rgba(73, 73, 73, 0.548);
+  // border-bottom: 1px solid rgba(73, 73, 73, 0.548);
+  // border-top: 1px solid rgba(73, 73, 73, 0.548);
   border-radius: 2px @media (max-width: 600px) {
     width: 60vw;
   }

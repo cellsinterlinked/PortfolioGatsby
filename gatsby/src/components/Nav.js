@@ -43,7 +43,7 @@ const NavRightStyles = styled.div`
     color: white;
     text-decoration: none;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 1181px) {
     display: none;
   }
   animation-name: ${IntroAnimation4};
@@ -59,7 +59,7 @@ const NavRightBurger = styled.div`
   width: 4rem;
   animation-name: ${IntroAnimation4};
   animation-duration: 4s;
-  @media (min-width: 801px) {
+  @media (min-width: 1180px) {
     display: none;
   }
   span {
