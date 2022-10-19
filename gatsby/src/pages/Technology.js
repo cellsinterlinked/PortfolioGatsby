@@ -26,7 +26,7 @@ const TechStyles = styled.section`
   transform-style: preserve-3d;
   z-index: -1;
   @media (max-width: 700px) {
-    // justify-content: flex-start;
+    padding-top: 0rem;
   }
 `;
 
@@ -42,6 +42,10 @@ const ContainerStyles = styled.div`
 const IconStyles = styled.img`
   height: 8rem;
   width: auto;
+  @media (max-width: 700px) {
+    height: 6rem;
+    width: auto;
+  }
 `;
 
 const ObserverStyles = styled.div`
@@ -88,6 +92,8 @@ const ObserverStyles = styled.div`
   }
   @media (max-width: 700px) {
     margin: 0.5rem;
+    height: 10rem;
+    width: 10rem;
   }
 `;
 
@@ -99,8 +105,9 @@ margin-bottom: 20px;
 text-align: center;
 max-width: 40rem;
 @media(max-width: 900px) {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   max-width: 30rem;
+  font-size: 25px;
 }
 }
 `;

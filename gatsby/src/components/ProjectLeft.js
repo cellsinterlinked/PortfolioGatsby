@@ -15,6 +15,9 @@ const SectionStyles = styled.div`
   overflow: hidden;
   align-items: center;
   scroll-snap-align: start;
+  @media (max-width: 700px) {
+    padding-top: 3rem;
+  }
 `;
 
 const FeatBubbleStyles = styled.div`
@@ -37,7 +40,7 @@ const FeatBubbleStyles = styled.div`
   transition-delay: 100;
   @media (max-width: 700px) {
     width: 90vw;
-    height: 90vw;
+    height: 80vw;
   }
 `;
 
@@ -103,24 +106,26 @@ const BubbleStyles = styled.div`
     }
   }
   @media (max-width: 700px) {
+    height: 8rem;
+    width: 8rem;
     &:nth-child(1) {
-      top: -7rem;
+      top: -6rem;
       right: 1rem;
     }
     &:nth-child(2) {
-      top: -12rem;
+      top: -9rem;
       left: calc(50vw - 5.7rem);
     }
     &:nth-child(3) {
-      top: -7rem;
+      top: -6rem;
       left: 1rem;
     }
     &:nth-child(4) {
-      bottom: -7rem;
+      bottom: -6rem;
       left: 1rem;
     }
     &:nth-child(5) {
-      bottom: -7rem;
+      bottom: -6rem;
       right: 1rem;
     }
   }

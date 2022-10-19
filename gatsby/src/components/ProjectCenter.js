@@ -16,6 +16,9 @@ const SectionStyles = styled.div`
   overflow: hidden;
   align-items: flex-start;
   scroll-snap-align: start;
+  @media (max-width: 700px) {
+    height: 70vh;
+  }
 `;
 
 const TitleStyles = styled.h1`

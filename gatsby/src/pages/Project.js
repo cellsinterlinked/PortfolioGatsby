@@ -56,6 +56,9 @@ const OrbFloatStyles = styled.div`
   );
   top: -3rem;
   // left: calc(50% - 1.5rem);
+  @media (max-width: 700px) {
+    top: -2rem;
+  }
 `;
 
 const TransStyles = styled.div`

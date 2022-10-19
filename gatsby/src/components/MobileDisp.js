@@ -23,6 +23,8 @@ flex-direction: row;
 }
 @media (max-width: 900px) {
   width: 100vw;
+
+  margin-bottom: 5rem;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -40,14 +42,14 @@ span {
   @media (max-width: 900px) {
     &:nth-child(1) {
      
-      width: 30vw;
+      width: 25vw;
     
       transition-delay: 150ms;
       margin-left: 1vw;
       margin-right: 1vw;
     }
     &:nth-child(2) {
-      width: 30vw;
+      width: 25vw;
     
       transition-delay: 300ms;
       margin-left: 1vw;
@@ -55,7 +57,7 @@ span {
 
     }
     &:nth-child(3) {
-      width: 60vw;
+      width: 50vw;
     
       transition-delay: 450ms;
       margin-left: 1vw;
@@ -63,7 +65,7 @@ span {
 
     }
     &:nth-child(4) {
-      width: 60vw;
+      width: 50vw;
    
     
       transition-delay: 600ms;
