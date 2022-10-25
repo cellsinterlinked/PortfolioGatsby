@@ -169,7 +169,7 @@ export default function ProjectRight({
   scroll,
 }) {
   const { ref, inView, entry } = useInView({
-    threshold: 1,
+    threshold: 0.2,
   });
 
   return (

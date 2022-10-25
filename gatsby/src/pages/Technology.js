@@ -114,7 +114,7 @@ max-width: 40rem;
 
 export default function Technology(props) {
   const { ref, inView, entry } = useInView({
-    threshold: 1,
+    threshold: 0.2,
   });
 
   return (

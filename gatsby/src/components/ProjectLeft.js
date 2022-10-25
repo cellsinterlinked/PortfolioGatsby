@@ -144,7 +144,7 @@ const ContainerStyles = styled.div`
 
 export default function ProjectLeft({ features, technologies, scroll }) {
   const { ref, inView, entry } = useInView({
-    threshold: 1,
+    threshold: 0.2,
   });
 
   return (
