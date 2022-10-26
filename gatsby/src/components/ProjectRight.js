@@ -16,7 +16,7 @@ const SectionStyles = styled.div`
   scroll-snap-align: start;
 `;
 
-const RoundButtonStyles = styled.div`
+const RoundButtonStyles = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,11 +27,11 @@ const RoundButtonStyles = styled.div`
   color: white;
   box-shadow: 8px 8px 14px black;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 1px;
   text-align: center;
-
+  text-decoration: none;
   transition: 500ms ease;
   @media (max-width: 700px) {
     left: 1rem;
@@ -92,6 +92,7 @@ const CodeStyles = styled.div`
     height: 10rem;
     width: 10rem;
   }
+
   z-index: 30;
   cursor: pointer;
   display: flex;
@@ -103,16 +104,6 @@ const CodeStyles = styled.div`
   height: 15rem;
   width: 15rem;
   border-radius: 1rem;
-  // background: linear-gradient(
-  //   30deg,
-  //   rgba(117, 41, 73, 0.014) 2%,
-  //   rgba(170, 46, 98, 0.5) 100%
-  // );
-  // background: linear-gradient(
-  //   30deg,
-  //   rgba(204, 204, 204, 0.014) 2%,
-  //   rgba(206, 206, 206, 0.5) 100%
-  // );
   background: linear-gradient(30deg, rgb(7, 7, 7) 2%, rgb(44, 44, 44) 100%);
   box-shadow: 5px -3px 12px rgba(0, 0, 0, 0.472);
   transition: 1.4s ease;
@@ -122,6 +113,41 @@ const CodeStyles = styled.div`
       background: rgb(0, 87, 87);
       color: white;
       box-shadow: 4px 4px 8px black;
+      text-decoration: none;
+    }
+  }
+`;
+
+const Code2Styles = styled.div`
+  @media (max-width: 700px) {
+    right: 12rem;
+    left: auto;
+    top: -7rem;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  z-index: 30;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -10rem;
+  left: 24rem;
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 1rem;
+  background: linear-gradient(30deg, rgb(7, 7, 7) 2%, rgb(44, 44, 44) 100%);
+  box-shadow: 5px -3px 12px rgba(0, 0, 0, 0.472);
+  transition: 1.4s ease;
+  // transition-delay: 2000;
+  &:hover {
+    ${RoundButtonStyles} {
+      background: rgb(0, 87, 87);
+      color: white;
+      box-shadow: 4px 4px 8px black;
+      text-decoration: none;
     }
   }
 `;
@@ -153,6 +179,7 @@ const LiveStyles = styled.div`
       box-shadow: none;
       color: white;
       box-shadow: none;
+      text-decoration: none;
 
     }
 `;
@@ -167,6 +194,8 @@ export default function ProjectRight({
   codeLink,
   liveLink,
   scroll,
+  siteArr,
+  gitArr,
 }) {
   const { ref, inView, entry } = useInView({
     threshold: 0.2,
@@ -185,12 +214,39 @@ export default function ProjectRight({
         <CodeStyles
           className={inView ? 'secondBubbleVisible' : 'secondBubbleHidden'}
         >
-          <RoundButtonStyles>SEE THE CODE</RoundButtonStyles>
+          <RoundButtonStyles
+            href={gitArr.front}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SEE THE CODE
+            <br />
+            (FRONT-END)
+          </RoundButtonStyles>
         </CodeStyles>
+        {gitArr && gitArr.back && (
+          <Code2Styles
+            className={inView ? 'secondBubbleVisible' : 'secondBubbleHidden'}
+          >
+            <RoundButtonStyles
+              href={gitArr.back}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              SEE THE CODE
+              <br />
+              (BACK-END)
+            </RoundButtonStyles>
+          </Code2Styles>
+        )}
         <LiveStyles
           className={inView ? 'secondBubbleVisible' : 'secondBubbleHidden'}
         >
-          <RoundButtonStyles>
+          <RoundButtonStyles
+            href={siteArr}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             SEE IT LIVE
             {/* <AnimStyles /> */}
           </RoundButtonStyles>

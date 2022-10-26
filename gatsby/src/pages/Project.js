@@ -125,9 +125,30 @@ export default function Project({
   const backArr = [<Squares1 />, <Squares2 />, <Squares3 />, <Squares4 />];
   const urlArr = [
     'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199004/Portfolio/ACM_vnpou9.mp4',
-    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199035/Portfolio/Coach_Console_tyokfh.mp4',
+    'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666805196/Portfolio/Coach_Console_final_dbhcci.mp4',
     'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199047/Portfolio/Tabletop_Assistant_awdaqe.mp4',
     'https://res.cloudinary.com/dbnapmpvm/video/upload/v1666199016/Portfolio/Non-Urgent_r7ueev.mp4',
+  ];
+  const gitArr = [
+    { front: 'https://github.com/cellsinterlinked/Chantz-Morris' },
+    {
+      front: 'https://github.com/cellsinterlinked/Coach-Console_UI-Final',
+      back: 'https://github.com/cellsinterlinked/Coach-Console_Server-Final',
+    },
+    {
+      front: 'https://github.com/cellsinterlinked/TableTopUI',
+      back: 'https://github.com/cellsinterlinked/TableTopServer',
+    },
+    {
+      front: 'https://github.com/cellsinterlinked/Insta-Clone-UI',
+      back: 'https://github.com/cellsinterlinked/Insta-Clone-Back-End',
+    },
+  ];
+  const siteArr = [
+    'https://acmrealtyteam.com/',
+    'https://coachconsole.netlify.app/',
+    'https://app.netlify.com/sites/tabletopassistant/overview',
+    'https://non-urgentgram.netlify.app/',
   ];
 
   return (
@@ -182,6 +203,8 @@ export default function Project({
           description={description}
           codeLink={codeLink}
           liveLink={liveLink}
+          siteArr={siteArr[index]}
+          gitArr={gitArr[index]}
           // scroll={scroll}
         />
       )}
