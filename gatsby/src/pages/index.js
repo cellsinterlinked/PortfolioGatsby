@@ -57,6 +57,7 @@ export default function HomePage({ data, ...props }) {
 
   return (
     <HomeStyles>
+      {/* <Nav /> */}
       <Head />
       <Technology />
       <ProjectIntro projects={firstSortedObj} />

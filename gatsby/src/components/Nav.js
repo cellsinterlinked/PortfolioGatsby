@@ -177,7 +177,9 @@ export default function Nav() {
         <a href="#contact" onClick={() => setDrawerOpen(false)}>
           CONTACT
         </a>
-        <a>RESUME</a>
+        <a href="/Resume" rel="noreferrer noopener" target="_blank">
+          RESUME
+        </a>
       </NavRightStyles>
     </NavStyles>
   );
