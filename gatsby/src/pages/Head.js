@@ -176,7 +176,7 @@ export default function Head() {
         </PortraitContainerStyle>
         <PortraitContainerStyle2>
           <h1>Hey There, I'm Scott.</h1>
-          <p>I'm a front end developer working primarily with React</p>
+          <p>I'm a full stack developer working primarily with React</p>
           {/* <Cube /> */}
         </PortraitContainerStyle2>
       </IntroContainerStyle>
