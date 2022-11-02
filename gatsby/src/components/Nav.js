@@ -151,7 +151,9 @@ export default function Nav() {
           <a href="#technology">TECHNOLOGIES</a>
           <a href="#projects">PROJECTS</a>
           <a href="#contact">CONTACT</a>
-          <a>RESUME</a>
+          <a href="/Resume" rel="noreferrer noopener" target="_blank">
+            RESUME
+          </a>
         </NavMobileStyles>
       </Drawer>
       <NavRightBurger onClick={openDrawerHandler}>
