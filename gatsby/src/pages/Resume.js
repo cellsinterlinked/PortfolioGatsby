@@ -28,7 +28,7 @@ export default function Resume() {
     <ResumeContainerStyle>
       <ResumeImageStyle
         alt=""
-        src="https://res.cloudinary.com/dbnapmpvm/image/upload/v1669242584/Portfolio/Resume2_igsgug.png"
+        src="https://res.cloudinary.com/dbnapmpvm/image/upload/v1669244856/Portfolio/Resume_final_lzxidt.jpg"
       />
       <ResumeImageStyle
         alt=""
