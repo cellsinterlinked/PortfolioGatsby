@@ -147,7 +147,7 @@ export default function Project({
   const siteArr = [
     'https://acmrealtyteam.com/',
     'https://coachconsole.netlify.app/',
-    'https://app.netlify.com/sites/tabletopassistant/overview',
+    'https://tabletopassistant.netlify.app/',
     'https://non-urgentgram.netlify.app/',
   ];
 
