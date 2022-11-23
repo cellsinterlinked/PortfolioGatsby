@@ -12,6 +12,7 @@ import node from '../../Resources/nodejs.png';
 import mongodb from '../../Resources/mongodb.png';
 import html from '../../Resources/html.png';
 import socketio from '../../Resources/socketio.png';
+import gatsbylogo from '../../Resources/gatsbylogo.png';
 import './Page.css';
 import Squares2 from '../components/Background/Squares2';
 
@@ -153,7 +154,7 @@ export default function Technology(props) {
           ref={ref}
           className={inView ? 'observerShow' : 'observer'}
         >
-          React
+          React/ReactNative
           <IconStyles src={react} alt="" />
         </ObserverStyles>
         <ObserverStyles
@@ -176,12 +177,21 @@ export default function Technology(props) {
           MongoDB
           <IconStyles src={mongodb} alt="" />
         </ObserverStyles>
+
         <ObserverStyles
           ref={ref}
           className={inView ? 'observerShow' : 'observer'}
         >
           Socketio
           <IconStyles src={socketio} alt="" />
+        </ObserverStyles>
+
+        <ObserverStyles
+          ref={ref}
+          className={inView ? 'observerShow' : 'observer'}
+        >
+          Gatsby
+          <IconStyles src={gatsbylogo} alt="" />
         </ObserverStyles>
       </ContainerStyles>
     </TechStyles>
