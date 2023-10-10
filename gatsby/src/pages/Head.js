@@ -176,7 +176,7 @@ export default function Head() {
         </PortraitContainerStyle>
         <PortraitContainerStyle2>
           <h1>Hey There, I'm Scott.</h1>
-          <p> a passionate self-taught full-stack web developer with expertise in JavaScript, 
+          <p> A passionate self-taught full-stack web developer with expertise in JavaScript, 
             CSS, HTML, and a range of cutting-edge technologies including React.js, Node.js, 
             Next.js, Gatsby.js, MongoDB, Express, and React Native. I specialize in creating 
             dynamic and user-centric web applications that combine my love for coding with 
