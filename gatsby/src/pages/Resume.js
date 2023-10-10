@@ -28,11 +28,11 @@ export default function Resume() {
     <ResumeContainerStyle>
       <ResumeImageStyle
         alt=""
-        src="https://res.cloudinary.com/dbnapmpvm/image/upload/v1669244856/Portfolio/Resume_final_lzxidt.jpg"
+        src="https://res.cloudinary.com/dbnapmpvm/image/upload/f_auto,q_auto/v1/Portfolio/qfxz6r5ujfveutw0autj"
       />
       <ResumeImageStyle
         alt=""
-        src="https://res.cloudinary.com/dbnapmpvm/image/upload/v1667326903/Portfolio/Resume2_x0mt7q.png"
+        src="https://res.cloudinary.com/dbnapmpvm/image/upload/f_auto,q_auto/v1/Portfolio/e50ncvmiqomktxxkw13r"
       />
     </ResumeContainerStyle>
   );
